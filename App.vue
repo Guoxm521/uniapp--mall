@@ -11,7 +11,7 @@
 		font-family: iconfont;
 		font-weight: normal;
 		font-style: normal;
-		src: url('//at.alicdn.com/t/font_1920165_yefj88q7po.ttf') format('truetype')
+		src: url('static/iconfont.ttf') format('truetype')
 	}
 
 	.iconfont {
@@ -22,8 +22,46 @@
 	}
 
 	.icon-right:before {
-		content: '\e65b';
+		content: '\e670';
 	}
+	.icon-credits:before {
+		content: '\e639';
+	}
+	.icon-dingdan:before {
+		content: '\e8ae';
+	}
+	.icon-daifu:before {
+		content: '\e8b2';
+	}
+	.icon-shouhuo:before {
+		content: '\e8bf';
+	}
+	.icon-tuikuan:before {
+		content: '\e8ba';
+	}
+	.icon-time:before {
+		content: '\e638';
+	}
+	
+	.icon-qianbao::before {
+		content: '\e63a';
+	}
+	.icon-dizhi::before {
+		content: '\e647';
+	}
+	.icon-fenxiang::before {
+		content: '\e642';
+	}
+	.icon-shaidan::before {
+		content: '\e636';
+	}
+	.icon-shoucang::before {
+		content: '\e66b';
+	}
+	.icon-shezhi::before {
+		content: '\e643';
+	}
+	
 	
 	// 商品标题格式的统一设置
 	.clamp {
