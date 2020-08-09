@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<view class="list-cell"  @click="eventClick" >
+		<view class="list-cell"  @click="eventClick" hover-class="hover" :hover-stay-time="50">
 			<text class="iconfont cell-icon" :class="cellIcon":style="[{color:cellIconColor}]"></text>
 			<text class="cell-title">{{title}}</text>
 			<text class="cell-tips" >{{cellTip}}</text>
@@ -43,6 +43,9 @@
 			align-content: space-around;
 			position: relative;
 			border-bottom: 3rpx solid #F1F1F1;
+			&.hover {
+				background:#fafafa;
+			}
 
 			.cell-icon {
 				width: 56rpx;

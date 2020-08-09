@@ -61,7 +61,12 @@
 	.icon-shezhi::before {
 		content: '\e643';
 	}
-	
+	.icon-xingxing::before {
+		content: '\e66b';
+	}
+	.icon-wenhao::after {
+		content: "\e666";
+	}
 	
 	// 商品标题格式的统一设置
 	.clamp {

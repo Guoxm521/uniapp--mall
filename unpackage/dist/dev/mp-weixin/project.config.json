@@ -32,8 +32,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "",
-	"appid": "wx02bda46001722897",
-	"projectname": "mall%E4%BB%BF%E7%94%B5%E5%95%86%E9%A1%B9%E7%9B%AE",
+	"appid": "touristappid",
+	"projectname": "mall仿电商项目",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

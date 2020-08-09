@@ -87,6 +87,40 @@
 				"navigationBarTitleText":"设置"
 			}
         }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText":"通知"
+			}
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"navigationBarTitleText": "详情",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/product/product",
+            "style" : {
+				"navigationBarTitleText": "详情",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

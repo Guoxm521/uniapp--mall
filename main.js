@@ -5,7 +5,7 @@ import Json from './Json.js'
 
 
 // 点击弹窗
-const msg = (title,duration=1500,mask=false,icon="none")=> {
+const msg = ({title,duration=1500,mask=false,icon="none"})=> {
 	uni.showToast({
 		title,
 		duration,

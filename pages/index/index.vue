@@ -221,15 +221,19 @@
 			// 点击顶部的按钮事假
 			onNavigationBarButtonTap (e) {
 				if(e.index === 0) {
-					this.$api.msg('点击了扫描框')
+					this.$api.msg({
+						title:"点击了扫描框"
+					})
 				}else if(e.index === 1) {
-					this.$api.msg('点击了消息框')
+					uni.navigateTo({
+						url:'../notice/notice'
+					})
 				}
 			}
 		}
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 	@import './index.scss'
 </style>

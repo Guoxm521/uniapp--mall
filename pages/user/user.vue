@@ -78,7 +78,7 @@
 			<listCell title="分享" cellIconColor="#623AA2" cellIcon="icon-fenxiang" cellTip="邀请好友赢10万大礼"></listCell>
 			<listCell title="晒单" cellIconColor="#9708CC" cellIcon="icon-shaidan" cellTip="晒单抢红包"></listCell>
 			<listCell title="我的收藏" cellIconColor="#1abc9c" cellIcon="icon-shoucang" ></listCell>
-			<listCell title="设置" cellIconColor="#e74c3c" cellIcon="icon-shezhi"></listCell>
+			<listCell title="设置" @eventClick="navToSet" cellIconColor="#e74c3c" cellIcon="icon-shezhi"></listCell>
 			
 		</view>
 	</view>
@@ -105,11 +105,28 @@
 				console.log(list)
 			},
 			hello() {
-				console.log(222)
 				this.$api.msg('你好呀')
 				uni.switchTab({
 					url:'../index/index'
 				})
+			},
+			// 跳转到设置页面
+			navToSet() {
+				uni.navigateTo({
+					url:'../set/set'
+				})
+			},
+			// 监听导航栏上两个按钮的事件
+			onNavigationBarButtonTap(e) {
+				if(e.index === 0) {
+					uni.navigateTo({
+						url:'../set/set'
+					})
+				}else {
+					uni.navigateTo({
+						url:'../notice/notice'
+					})
+				}
 			}
 		}
 	}
