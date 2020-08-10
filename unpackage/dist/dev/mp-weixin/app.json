@@ -5,7 +5,10 @@
     "pages/category/category",
     "pages/user/user",
     "compontents/list-cell",
-    "pages/set/set"
+    "pages/set/set",
+    "pages/notice/notice",
+    "pages/detail/detail",
+    "pages/product/product"
   ],
   "subPackages": [],
   "window": {
@@ -47,5 +50,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap19.json"
+  "sitemapLocation": "sitemap70.json"
 }

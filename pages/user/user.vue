@@ -85,7 +85,7 @@
 </template>
 
 <script>
-	import listCell from "@/compontents/list-cell";
+	import listCell from "@/components/list-cell";
 	export default {
 		components:{
 			listCell

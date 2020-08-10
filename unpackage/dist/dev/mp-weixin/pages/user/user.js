@@ -237,7 +237,6 @@ var _listCell = _interopRequireDefault(__webpack_require__(/*! @/compontents/lis
                 console.log(list);case 5:case "end":return _context.stop();}}}, _callee);}))();
     },
     hello: function hello() {
-      console.log(222);
       this.$api.msg('你好呀');
       uni.switchTab({
         url: '../index/index' });
@@ -256,9 +255,8 @@ var _listCell = _interopRequireDefault(__webpack_require__(/*! @/compontents/lis
           url: '../set/set' });
 
       } else {
-        this.$api.msg({
-          title: '点击了消息按钮',
-          icon: 'success' });
+        uni.navigateTo({
+          url: '../notice/notice' });
 
       }
     } } };exports.default = _default;

@@ -1,0 +1,109 @@
+.cart-list {
+	margin-bottom: 150rpx;
+	.cart-item {
+		display: flex;
+		padding: 30rpx 40rpx;
+		padding-bottom: 22rpx;
+		border-bottom: 3rpx solid #E4E7ED;
+		&:last-child {
+			border-bottom: 0;
+		}
+		.left {
+			position: relative;
+			image {
+				width: 230rpx;
+				height: 230rpx;
+			}
+			.icon-all {
+				color: #909399;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translate(-45%,-45%);
+				display: block;
+				width: 44rpx;
+				color: 44rpx;
+				border-radius: 50%;
+				border: 4rpx solid #FFFFFF;
+				background-color: #FFFFFF;
+				&.selected {
+					color: #FA436A;
+				}
+			}
+		}
+		.right {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			margin-left: 30rpx;
+			width: 372rpx;
+			text {
+				font-size: 30rpx;
+				color: #303313;
+				margin-bottom: 12rpx;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.spec {
+				font-size: 26rpx;
+				color: #909399;
+			}
+			.numberbox {
+				margin-top: 10rpx;
+			}
+		}
+		.clear {
+			color: #909399;
+		}
+	}
+}
+
+// 页面顶部
+.page-bottom {
+	position: fixed;
+	height: 100rpx;
+	width: 700rpx;
+	margin:  0 25rpx;
+	padding: 0 30rpx;
+	bottom: 120rpx;
+	background-color: #FFFFFF;
+	border-radius: 20rpx;
+	box-shadow: 0 0 20rpx rgba(0,0,0,0.4);
+	display: flex;
+	align-items: center;
+		justify-content: flex-end;
+	.switch {
+		switch {
+			transform: scale(0.85);
+		}
+		text {
+			font-size: 32rpx;
+			color: #903399;
+		}
+	}
+		
+	.priceAll {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		text-align: right;
+		margin-right: 25rpx;
+		text {
+			font-size: 32rpx;
+			color: #303313;
+			&:last-child {
+				font-size: 24rpx;
+				color: #909399;
+			}
+		}
+	}
+	button {
+		width: 166rpx;
+		height: 76rpx;
+		font-size: 32rpx;
+		color: #FFFFFF;
+		border-radius: 38rpx;
+		background-color: $uni-color-base;
+	}
+}

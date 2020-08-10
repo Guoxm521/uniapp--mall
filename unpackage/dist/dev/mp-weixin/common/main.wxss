@@ -76,6 +76,12 @@
 .icon-shezhi::before {
   content: '\e643';
 }
+.icon-xingxing::before {
+  content: '\e66b';
+}
+.icon-wenhao::after {
+  content: "\e666";
+}
 .clamp {
   overflow: hidden;
   text-overflow: ellipsis;

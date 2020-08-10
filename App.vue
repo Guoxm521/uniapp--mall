@@ -68,6 +68,13 @@
 		content: "\e666";
 	}
 	
+	.icon-all::after {
+		content: "\e660";
+	}
+		
+	.icon-clear::after {
+		content: "\e65d";
+	}
 	// 商品标题格式的统一设置
 	.clamp {
 		overflow: hidden;
