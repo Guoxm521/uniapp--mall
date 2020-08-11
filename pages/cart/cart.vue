@@ -19,19 +19,19 @@
 						@eventChange="bindChange"
 					></uni-number-box>
 				</view>
-				<text class="clear iconfont icon-clear"></text>
+				<text class="clear iconfont icon-clear" @click="remove(index)"></text>
 			</view>
 		</view>
 		<view class="page-bottom">
 			<view class="switch">
-				<switch checked @change="switchChange" color="#fa436a" />
-				<text>清空</text>
+				<switch :checked="checked" @change="switchChange" color="#fa436a" />
+				<text></text>
 			</view>
 			<view class="priceAll">
-				<text>¥{{calcTotal}}</text>
+				<text>¥{{ calcTotal }}</text>
 				<text>已经优惠74.35</text>
 			</view>
-			<button>去结算</button>
+			<button @click="createOrder">去结算</button>
 		</view>
 	</view>
 </template>
@@ -44,7 +44,8 @@ export default {
 	},
 	data() {
 		return {
-			cartList: ''
+			cartList: [],
+			checked: true
 		};
 	},
 	onLoad() {
@@ -62,9 +63,11 @@ export default {
 					sum += item.price * item.number;
 				}
 			});
-			sum = Number(sum.toFixed(2))
+			sum = Number(sum.toFixed(2));
 			return sum;
-		}
+		},
+		// 全选按钮
+
 	},
 	methods: {
 		async getCartList() {
@@ -74,23 +77,50 @@ export default {
 				if (item.number > item.stock) {
 					item.number = item.stock;
 				}
-	
 			});
 			this.cartList = list;
-			console.log(this.cartList);
 		},
 		//清除全部的购物车
 		switchChange(data) {
-			console.log(data);
+			if(data.detail.value) {
+				this.cartList.forEach(item => {
+					item.selected = true
+				})
+			}else {
+				this.cartList.forEach(item => {
+					item.selected = false
+				})
+			}
 		},
 		// 商品的选择与取消
 		check(item, index) {
 			this.cartList[index].selected = !item.selected;
+			this.checkeBtn()
 		},
 		// 数量改变
-		bindChange:function(data) {
+		bindChange: function(data) {
 			this.cartList[data.index].number = data.number;
+		},
+		// 商品移除
+		remove(index) {
+			this.cartList.splice(index, 1);
+		},
+		// 全选按钮
+		checkeBtn() {
+			const len = this.cartList.filter(item => item.selected === true)
+			if(len.length < this.cartList.length) {
+				this.checked = false
+			} else {
+				this.checked = true
+			}
+		},
+		// 创建订单
+		createOrder() {
+			uni.navigateTo({
+				url:"../order/createOrder"
+			})
 		}
+
 	}
 };
 </script>

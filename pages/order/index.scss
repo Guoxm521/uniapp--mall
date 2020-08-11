@@ -1,0 +1,142 @@
+.user-info-box {
+	display: flex;
+	align-items: center;
+	padding: 30rpx 40rpx;
+	border-bottom: 5rpx solid #FA436A;
+	.icon-dizhi {
+		font-size: 42rpx;
+	}
+	.cen {
+		flex: 1;
+		margin-left: 40rpx;
+		.top {
+			text {
+				&:first-child {
+					font-size: 34rpx;
+					color: #303313;
+				}
+				&:last-child {
+					font-size: 28rpx;
+					color: #303313;
+				}
+			}
+		}
+		.address {
+			font-size: 28rpx;
+			color: #909399;
+		}
+	}
+	.icon-right {
+		font-size: 42rpx;
+	}
+}
+
+
+.box2 {
+	.shop {
+		display: flex;
+		align-items: center;
+		font-size: 30rpx;
+		color: #606526;
+		padding-left: 60rpx;
+		border-bottom: 2rpx solid #e4e7ed;
+		height: 84rpx;
+	}
+	.goodsdetail {
+		display: flex;
+		padding: 30rpx 40rpx;
+		image {
+			display: block;
+			width: 140rpx;
+			height: 140rpx;
+		}
+		.right {
+			display: flex;
+			flex-direction: column;
+			margin-left: 40rpx;
+			text {
+				margin-bottom: 10rpx;
+				&:first-child {
+					font-size: 30rpx;
+					color: #303133;
+				}
+				&:nth-child(2) {
+					font-size: 26rpx;
+					color: #909399;
+				}
+			}
+			.price {
+				text {
+					&:first-child {
+						font-size: 32rpx;
+						color: #303133;
+						font-weight: 700;
+					}
+					&:last-child {
+						font-size: 26rpx;
+						color: #303313;
+						padding-left: 25rpx;
+					}
+				}
+			}
+		}
+	}
+}
+.list {
+	margin-bottom: 120rpx;
+}
+.list-cell {
+	height: 88rpx;
+	padding: 0 40rpx;
+	font-size: 26rpx;
+	color: #909399;
+	display: flex;
+	align-items: center;
+	border-bottom: 1rpx solid #eeeeee;
+	image {
+		width: 32rpx;
+		height: 32rpx;
+		margin-right: 15rpx;
+	}
+	.title {
+		flex: 1;
+	}
+	.right {
+		color: #FA436A;
+	}
+	.desc {
+		flex: 5;
+		font-size: 28rpx;
+	}
+}
+.page-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 90rpx;
+	background-color: #FFFFFF;
+	box-shadow:  0 0 15rpx rgba(0,0,0,0.2);
+	display: flex;
+	align-items: center;
+	.left{
+		flex: 1;
+		margin-left: 30rpx;
+		text {
+			&:first-child {
+				font-size: 30rpx;
+				color: #606266;
+			}
+			&:last-child {
+				font-size: 36rpx;
+				color: #FA436A;
+				font-weight: 700;
+			}
+		}
+	}
+	button {
+		width: 280rpx;
+		background-color: #FA436A;
+		border-radius: 0;
+		color: #FFFFFF;
+	}
+}

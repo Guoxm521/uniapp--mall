@@ -111,4 +111,9 @@
 		.b-b {
 			border-bottom: 2rpx solid #eeeeee;
 		}
+		.border {
+			width: 100%;
+			height: 0;
+			border-bottom: 8rpx solid #eeeeee;
+		}
 </style>
